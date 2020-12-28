@@ -78,7 +78,7 @@ header img {
 /* Section defaults*/
 
 main section {
-  padding: 200px 100px 200px 200px;
+  padding: 200px 100px 50px 200px;
 }
 
 main section h2 {
@@ -96,15 +96,15 @@ main section p:last-of-type {
 
 /*** SECTIONs BACKGROUND IMAGES ***/
 main section:first-of-type {
-  background: rgb(0, 0, 0) url('../img/portfolio2.jpg') center/cover no-repeat;
-  filter: brightness(40%);
+  background: rgb(0, 0, 0,.8) url('../img/portfolio2.jpg') center/cover no-repeat;
+  background-blend-mode: multiply;
 }
 main section:nth-child(2){
   background: url('../img/portfolio3.png') center/cover no-repeat;
 }
 main section:nth-child(3){
-  background: rgb(0, 0, 0) url('../img/portfolio4.jpg') center/cover no-repeat;
-  filter: brightness(40%);
+  background: rgb(0, 0, 0,.8) url('../img/portfolio4.jpg') center/cover no-repeat;
+  background-blend-mode: multiply;
 }
 main section:last-of-type{
   background: url('../img/portfolio5.png') center/cover no-repeat;
