@@ -87,7 +87,7 @@ main section h2 {
 }
 
 main section p {
-  color: #333;
+  color: #666;
 }
 
 main section p:last-of-type {
@@ -96,13 +96,15 @@ main section p:last-of-type {
 
 /*** SECTIONs BACKGROUND IMAGES ***/
 main section:first-of-type {
-  background: rgb(0, 0, 0,.7) url('../img/portfolio2.jpg') center/cover no-repeat;
+  background: rgb(0, 0, 0) url('../img/portfolio2.jpg') center/cover no-repeat;
+  filter: brightness(40%);
 }
 main section:nth-child(2){
   background: url('../img/portfolio3.png') center/cover no-repeat;
 }
 main section:nth-child(3){
-  background: rgb(0, 0, 0,.7) url('../img/portfolio4.jpg') center/cover no-repeat;
+  background: rgb(0, 0, 0) url('../img/portfolio4.jpg') center/cover no-repeat;
+  filter: brightness(40%);
 }
 main section:last-of-type{
   background: url('../img/portfolio5.png') center/cover no-repeat;
