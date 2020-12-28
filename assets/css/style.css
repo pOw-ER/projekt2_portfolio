@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Fjalla+One&family=Work+Sans:wght@300;400;500&display=swap');
+
+/********************************************** DEFAULT CODES and Font Settings *******************************************/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+p {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 11rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+h2{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+}
+
+/* h3 Tags section numbers */
+h3{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 9rem;
+  color: #666;
+  text-align: right;
+  margin: 0;
+}
+
+main a {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+article a, footer a {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+/************************************************ HEADER TAG ********************************************************/
+
+header p:first-of-type{
+  text-align: center;
+}
+
+/******** Header headline h2 (DIGITAL DESIGNER) ********/
+
+header h2 {
+  text-align: center;
+  font-weight: 600;
+}
+header h2:first-of-type {
+  margin-bottom: 0;
+}
+header h2:last-of-type {
+  margin-top: 0;
+}
+/* Header Image */
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+/************************************* MAIN TAG (4 SECTION and 1 ARTICLE)***********************************************/
+
+/* Section defaults*/
+
+main section {
+  padding: 200px 100px 200px 200px;
+}
+
+main section h2 {
+  font-size: 7rem;
+  margin:0;
+}
+
+main section p {
+  color: #333;
+}
+
+main section p:last-of-type {
+  margin-bottom: 75px;
+}
+
+/*** SECTIONs BACKGROUND IMAGES ***/
+main section:first-of-type {
+  background: url('../img/portfolio2.jpg') center/cover no-repeat;
+}
+main section:nth-child(2){
+  background: url('../img/portfolio3.png') center/cover no-repeat;
+}
+main section:nth-child(3){
+  background: url('../img/portfolio4.jpg') center/cover no-repeat;
+}
+main section:last-of-type{
+  background: url('../img/portfolio5.png') center/cover no-repeat;
+}
+
+/*** SECTION ODD(1 und 3) HEADLINE h2 ***/
+
+main section:nth-child(2n+1) h2 {
+  color: white;
+}
+
+/*** SECTION ODD(1 und 3) ANCHORS and HOVER FUNCTION ***/
+
+main section:nth-child(2n+1) a {
+  font-size: 1rem;
+  color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+}
+main section:nth-child(2n+1) a:hover {
+  background-color: white;
+  color: black;
+}
+main section:nth-child(2n+1) a:hover~h3 {
+  color: white;
+}
+
+/*** SECTION EVEN(2 und 4)ANCHORS and HOVER FUNCTION ***/
+
+main section:nth-child(2n) a {
+  font-size: 1rem;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+main section:nth-child(2n) a:hover {
+  background-color: black;
+  color: white;
+}
+main section:nth-child(2n) a:hover~h3 {
+  color: black;
+}
+
+/*** ARTICLE TAG ***/
+
+article {
+  background-color: black;
+  padding: 150px 100px 100px 100px;
+}
+
+/* ARTICLE ANCHOR für MAIL and HOVER */
+article a{
+  color: white;
+  font-size: 3rem;
+}
+article a:hover {
+  text-decoration: underline;
+}
+
+/* ARTICLE HEADLINE h2*/
+article h2 {
+  text-align: center;
+  color: white;
+  font-size: 12rem;
+  margin-top: 0;
+}
+/* ARTICLE paragraph p */
+article p{
+  color: #666;
+  width: 40%;
+  margin-left: auto;
+  line-height: 2.2rem;
+  font-weight:bolder;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+
+/************************************************ FOOTER TAG ********************************************************/
+
+footer {
+  padding: 200px 50px 20px 50px;
+}
+footer a {
+  display: block;
+  font-size: 10rem;
+  color: black;
+  text-align: center;
+  margin-top: 150px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+/************ HERZ EFFECT ANIMATION ************/
+footer p {
+  margin-top: 200px;
+  color: black;
+  text-align: center;
+  position: relative;
+  animation-name: herz;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+@keyframes herz {
+  0% {font-size: 1rem;}
+  50% {font-size: 1.5rem;}
+  100% {font-size: 1rem;}
+}
