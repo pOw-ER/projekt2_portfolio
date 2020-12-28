@@ -96,13 +96,13 @@ main section p:last-of-type {
 
 /*** SECTIONs BACKGROUND IMAGES ***/
 main section:first-of-type {
-  background: url('../img/portfolio2.jpg') center/cover no-repeat;
+  background: rgb(0, 0, 0,.7) url('../img/portfolio2.jpg') center/cover no-repeat;
 }
 main section:nth-child(2){
   background: url('../img/portfolio3.png') center/cover no-repeat;
 }
 main section:nth-child(3){
-  background: url('../img/portfolio4.jpg') center/cover no-repeat;
+  background: rgb(0, 0, 0,.7) url('../img/portfolio4.jpg') center/cover no-repeat;
 }
 main section:last-of-type{
   background: url('../img/portfolio5.png') center/cover no-repeat;
