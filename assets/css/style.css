@@ -199,16 +199,17 @@ footer a:hover {
 }
 /************ HERZ EFFECT ANIMATION ************/
 footer p {
-  margin-top: 200px;
+  width: 40px;
+  height:40px;
   color: black;
-  text-align: center;
+  margin: 200px auto 30px;
   position: relative;
   animation-name: herz;
   animation-duration: 0.7s;
   animation-iteration-count: infinite;
 }
 @keyframes herz {
-  0% {font-size: 1rem;}
-  50% {font-size: 1.5rem;}
-  100% {font-size: 1rem;}
+  0% {transform:scale(1,1)}
+  50% {transform:scale(2,2)}
+  100% {transform:scale(1,1)}
 }
